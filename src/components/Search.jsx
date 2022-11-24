@@ -2,13 +2,13 @@ import React from "react";
 
 const Search = () => {
   return (
-    <div class="input-group input-group-sm mb-3 ">
-      <span class="input-group-text" id="inputGroup-sizing-sm">
+    <div className="input-group input-group-sm mb-3 ">
+      <span className="input-group-text" id="inputGroup-sizing-sm">
         Buscar
       </span>
       <input
         type="text"
-        class="form-control"
+        className="form-control"
         aria-label="Sizing example input"
         aria-describedby="inputGroup-sizing-sm"
       />

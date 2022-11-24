@@ -6,11 +6,11 @@ const NavBar = () => {
   return (
     <div className="container">
       <img
-                  className="rounded"
-                  src="images/logo_1.png"
-                  alt="Tesla Heeamienas"
-                  width="120"
-                />
+        className="rounded"
+        src="images/logo_1.png"
+        alt="Tesla Heeamienas"
+        width="120"
+      />
       <div className="row">
         <div className="col-md-6 ">
           <nav className="navbar navbar-expand-lg">
@@ -29,7 +29,7 @@ const NavBar = () => {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse text-end" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul className="navbar-nav">
                   <li className="nav-item">
                     <a className="nav-link" aria-current="page" href="/corte">
                       Corte
