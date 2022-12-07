@@ -1,8 +1,13 @@
-import React from "react";
-
 const Search = () => {
   return (
-    <div className="input-group input-group-sm mb-3 ">
+    <div
+      className="input-group input-group-sm"
+      style={{
+        webkitBoxShadow: " -12px 14px 12px -10px rgba(0,0,0,0.48)",
+        mozBoxShadow: "-12px 14px 12px -10px rgba(0,0,0,0.48)",
+        boxSshadow: "-12px 14px 12px -10px rgba(0,0,0,0.48)",
+      }}
+    >
       <span className="input-group-text" id="inputGroup-sizing-sm">
         Buscar
       </span>

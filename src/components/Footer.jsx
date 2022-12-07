@@ -1,38 +1,44 @@
-import React from "react";
+import { Link} from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="container py-5">
+    <div
+      className="container py-5"
+      style={{
+        background: "#afef20",
+        border: "solid 1px #35A744",
+      }}
+    >
       <div className="row">
         <div className="col-md-6">
-          <a href="#" className="mx-1">
-            <img src={"images/instagram.svg"} alt={"instagram"} width={24} />
-          </a>
-          <a href="#" className="mx-1">
-            <img src={"images/twitter.svg"} alt={"twitter"} width={24} />
-          </a>
-          <a href="#" className="mx-1">
-            <img src={"images/facebook.svg"} alt={"facebook"} width={24} />
-          </a>
-          <a href="#" className="mx-1">
-            <img src={"images/whatsapp.svg"} alt={"whatsapp"} width={24} />
-          </a>
+          <Link to={"#"} className="mx-1">
+            <img src={"images/instagram.svg"} alt={"instagram"} width={24}></img>
+          </Link>
+          <Link  to={"#"} className="mx-1">
+            <img src={"images/twitter.svg"} alt={"twitter"} width={24}></img>
+          </Link >
+          <Link  to={"#"} className="mx-1">
+            <img src={"images/facebook.svg"} alt={"facebook"} width={24}></img>
+          </Link >
+          <Link  to={"#"} className="mx-1">
+            <img src={"images/whatsapp.svg"} alt={"whatsapp"} width={24}></img>
+          </Link >
         </div>
-        <div className="clo-md-6 d-flex justify-content-end">
-          <a href="#" target="_blank" className="mx-1">
+        <div className="col-md-6 d-flex justify-content-end">
+          <Link  to={"/app"} target="_blank" className="mx-1">
             <img
-              src="images/app_store_3x_d293084ca1.png"
+              src={"images/app_store_3x_d293084ca1.png"}
               alt="app-store"
               width="115"
-            />
-          </a>
-          <a href="#" target="_blank" className="mx-1">
+              ></img>
+          </Link >
+          <Link  to={"/googleplay"} target="_blank" className="mx-1">
             <img
-              src="images/disponible_google_play_3x_c977cae3bc.png"
+              src={"images/disponible_google_play_3x_c977cae3bc.png"}
               alt="goole-play"
               width="129"
-            />
-          </a>
+              ></img>
+          </Link >
         </div>
       </div>
       <hr />
@@ -40,30 +46,30 @@ const Footer = () => {
         <div className="col-md-10">
           <ul className="nav">
             <li className="nav-item">
-              <a className="nav-link text-muted" href="#">
+              <Link  className="nav-link text-muted" to={"/defconsumidor"}>
                 Política de Privacidad
-              </a>
+              </Link >
             </li>
             <li className="nav-item">
-              <a className="nav-link text-muted" href="#">
+              <Link  className="nav-link text-muted" to={"/defconsumidor"}>
                 Defensa del Consumidor
-              </a>
+              </Link >
             </li>
             <li className="nav-item">
-              <a className="nav-link text-muted" href="#">
-                Protección de datos personales
-              </a>
+              <Link className="nav-link text-muted" to={"/datos personales"}>
+                Datos Personales
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link text-muted" href="#">
+              <Link className="nav-link text-muted" to={"/contato"}>
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className="col-md-2 text-end">
           <p>
-            <img src="images/logo_1.png" alt="mcdonals-logo" width="40" />©
+            <img src={"images/logo_1.png"} alt="logo_1" width="40" ></img>©
             Tesla store
           </p>
         </div>
