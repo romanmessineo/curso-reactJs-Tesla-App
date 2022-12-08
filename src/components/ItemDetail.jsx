@@ -32,7 +32,7 @@ const ItemDetail = ({ item }) => {
                 <p className="legend">Imagen 2</p>
               </div>
               <div>
-                <img src={item.image1} alt={name}></img>
+                <img src={item.image3} alt={name}></img>
                 <p className="legend" alt={name}>
                   Imagen 3
                 </p>
