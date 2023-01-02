@@ -17,7 +17,7 @@ const NavBar = () => {
             <Link className="navbar-brand" to={"/"}>
               <img
                 className="rounded"
-                src={"images/logo_1.png"}
+                src={"/images/logo_1.png"}
                 alt="Tesla Heeamienas"
                 width="120"
                 img

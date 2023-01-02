@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const Item = ({ products }) => {
+  
   let id = products.id;
   let shortDescription = products.description.slice(0, 200);
   let name = products.name;

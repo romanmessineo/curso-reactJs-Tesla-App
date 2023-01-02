@@ -80,7 +80,6 @@ export const products = [
     price: 32990,
     stock: 25,
     initial: 1,
-
     manufactured: "Bosch",
     model: "Gop 30-28",
     voltage: 220,
@@ -151,7 +150,6 @@ export const products = [
     price: 84348,
     stock: 25,
     initial: 1,
-
     manufactured: "Aqua System",
     model: "08-900111",
     voltage: 220,
@@ -169,7 +167,6 @@ export const products = [
     price: 12349,
     stock: 200,
     initial: 1,
-
     manufactured: "Bosch",
     model: "GSB 550 RE",
     voltage: 220,
@@ -187,7 +184,6 @@ export const products = [
     price: 20074,
     stock: 75,
     initial: 1,
-
     manufactured: "DeWalt",
     model: "DWD024",
     voltage: 220,
@@ -205,7 +201,6 @@ export const products = [
     price: 675748,
     stock: 15,
     initial: 1,
-
     manufactured: "Bosch",
     model: "GBM 50-2",
     voltage: 220,
@@ -223,7 +218,6 @@ export const products = [
     price: 54589,
     stock: 40,
     initial: 1,
-
     manufactured: "Stanley",
     model: "Sirio 210",
     voltage: 220,
@@ -241,7 +235,6 @@ export const products = [
     price: 1034000,
     stock: 4,
     initial: 1,
-
     manufactured: "Duca",
     model: "69381860",
     voltage: 380,
@@ -259,7 +252,6 @@ export const products = [
     price: 18998,
     stock: 80,
     initial: 1,
-
     manufactured: "Skil",
     model: "69381860",
     voltage: 220,
@@ -277,7 +269,6 @@ export const products = [
     price: 293809,
     stock: 8,
     initial: 1,
-
     manufactured: "DeWalt",
     model: "DW621",
     voltage: 220,
@@ -295,7 +286,6 @@ export const products = [
     price: 119389,
     stock: 6,
     initial: 1,
-
     manufactured: "Kärcher",
     model: "K5",
     voltage: 220,

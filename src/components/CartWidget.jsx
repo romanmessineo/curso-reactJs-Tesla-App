@@ -1,17 +1,20 @@
-import { useState } from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { CartContext } from "./context/CartContext";
+
+const BotonCarrito = ({total}) => {
+    return (
+        <Link to={"/cart"} className="btn btn-warning position-relative">
+            <img src="/images/cart.svg" alt="Carrito" width="32" />
+            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">{total}</span>
+        </Link>
+    )
+}
 
 const CartWidget = () => {
+    const {cartTotal} = useContext(CartContext);
 
-const [count, setCount] = useState(1)
-
-  return (
-    <button type="button" className="btn btn-warning position-relative">
-      <img src={"images/cart.svg"} alt="carrito" whidth="32"></img>
-      <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-       {count}
-      </span>
-    </button>
-  );
-};
+    return cartTotal() > 0 ? <BotonCarrito total={cartTotal()} />  : "";
+}
 
 export default CartWidget;
