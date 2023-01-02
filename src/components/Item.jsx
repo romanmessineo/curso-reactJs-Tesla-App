@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Item = ({ products }) => {
-  
   let id = products.id;
   let shortDescription = products.description.slice(0, 200);
   let name = products.name;
@@ -40,21 +39,8 @@ const Item = ({ products }) => {
           </div>
         </div>
       </Link>
-      {/* <ItemCount initial={1} stock={stock} onAdd={()=>{}} />  */}
     </div>
   );
 };
 
 export default Item;
-
-/* <div
-            className="d-flex justify-content-evenly"
-            style={{ marginTop: "1rem" }}
-          >
-            <Button variant="primary">
-              Ver Màs<a href="#" target="#"></a>
-            </Button>
-            <Button variant="primary" className="btn btn-success">
-              Comprar<a href="#" target="#"></a>
-            </Button>
-          </div> */

@@ -1,32 +1,21 @@
 import ItemCount from "./ItemCount";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import { useEffect, useState, useContext} from "react";
-import { CartContext } from "./context/CartContext"
+import { useEffect, useState, useContext } from "react";
+import { CartContext } from "./context/CartContext";
 
 const ItemDetail = ({ item }) => {
-  const {addItem} = useContext(CartContext);  
+  const { addItem } = useContext(CartContext);
   const [itemStock, setItemStock] = useState(0);
-  
+
   const onAdd = (quantity) => {
     setItemStock(itemStock - quantity);
     addItem(item, quantity);
-  }
+  };
 
-  useEffect (()=>{
+  useEffect(() => {
     setItemStock(item.stock);
-
-  }, [item]
-  );
-
-/*   let name = item.name;
-  let description = item.description;
-  let price = item.price;
-  let stock = item.stock;  */
-
-
-
-  
+  }, [item]);
 
   return (
     <div
@@ -97,7 +86,7 @@ const ItemDetail = ({ item }) => {
           <p className="text-bg-success rounded-pill d-flex justify-content-center align-content-center">
             envíos gratis
           </p>
-          <ItemCount stock={item.stock} onAdd={onAdd}/> 
+          <ItemCount stock={item.stock} onAdd={onAdd} />
         </div>
       </div>
     </div>
