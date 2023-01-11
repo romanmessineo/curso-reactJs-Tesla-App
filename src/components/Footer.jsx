@@ -3,11 +3,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div
-      className="container py-5"
-      style={{
-        background: "#afef20",
-        border: "solid 1px #35A744",
-      }}
+      className="container py-5 bg-primary"
+      style={{borderRadius:"5px"}}
     >
       <div className="row">
         <div className="col-md-6">
@@ -47,25 +44,25 @@ const Footer = () => {
       </div>
       <hr />
       <div className="row">
-        <div className="col-md-10">
+        <div className="col-10">
           <ul className="nav">
             <li className="nav-item">
-              <Link className="nav-link text-muted" to={"/privacidad"}>
+              <Link className="nav-link text-light" to={"/privacidad"}>
                 Política de Privacidad
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-muted" to={"/defconsumidor"}>
+              <Link className="nav-link text-light" to={"/defconsumidor"}>
                 Defensa del Consumidor
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-muted" to={"/datos personales"}>
+              <Link className="nav-link text-light" to={"/datos personales"}>
                 Datos Personales
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-muted" to={"/contato"}>
+              <Link className="nav-link text-light" to={"/contato"}>
                 Contacto
               </Link>
             </li>

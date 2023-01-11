@@ -14,7 +14,7 @@ const Cart = () => {
             <div className="alert alert-danger" role="alert">
               No se encontraron Productos en el Carrito!
             </div>
-            <Link to={"/"} className="btn btn-warning">
+            <Link to={"/"} className="btn btn-primary">
               Volver a la Página Principal
             </Link>
           </div>
@@ -24,16 +24,16 @@ const Cart = () => {
   }
 
   return (
-    <div className="container">
-      <div className="row my-5">
-        <div className="col-md-12">
+    <div className="container bg-light"  >
+      <div className="row my-5 ">
+        <div className="col-md-12 ">
           <table class="table">
             <thead>
               <tr>
                 <th scope="col" colSpan={5} className="text-end">
                   <Link
                     onClick={clear}
-                    className="btn btn-warning"
+                    className="btn btn-danger"
                     title={"Vaciar Carrito"}
                   >
                     Vaciar Carrito
@@ -56,7 +56,7 @@ const Cart = () => {
               {cart.map((item) => (
                 <tr key={item.id}>
                   <td>
-                    <img src={item.image1} alt={item.name} width={80} />
+                   <Link to={"/item/"+item.id}><img style={{borderRadius:"50%", border:"solid 2px "  }}  src={item.image1} alt={item.name} width={80} /></Link>
                   </td>
                   <td className="align-middle">{item.name}</td>
                   <td className="align-middle text-end">{item.quantity}</td>
@@ -88,8 +88,7 @@ const Cart = () => {
                   <b>${sumTotal()}</b>
                 </td>
                 <td className="text-end">
-                  <button className="btn btn-warning">Finalizar Compra</button>
-                </td>
+                <Link to={"/checkout"} className="btn btn-warning">Finalizar Compra</Link></td>
               </tr>
             </tbody>
           </table>

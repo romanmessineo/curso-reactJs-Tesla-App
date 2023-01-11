@@ -1,17 +1,13 @@
 import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
-import Search from "./Search";
 
 const NavBar = () => {
   return (
     <div
-      className="container"
-      style={{
-        background: "#afef20",
-        border: "solid 1px #35A744",
-      }}
-    >
-      <div className="row p-3 justify-content-center">
+      className="container bg-primary"
+      style={{borderRadius: "5px",backgroundImage:"linear-gradient(120deg, #c16cff 0, #8f53ff 25%, #4838ff 50%, #0023ea 75%, #0019d8 100%)"}}>
+        
+      <div className="row p-3 justify-content-center fw-bold">
         <div className="row d-flex pb-2 justify-content-between">
           <div className="col-1">
             <Link className="navbar-brand" to={"/"}>
@@ -24,12 +20,9 @@ const NavBar = () => {
               />
             </Link>
           </div>
-          <div className="col-md-10 d-flex align-items-center justify-content-center">
-            <Search />
-          </div>
         </div>
 
-        <div className="col-md-6 ">
+        <div className="col-md-6">
           <nav className="navbar navbar-expand-lg">
             <div className="container-fluid">
               <Link className="navbar-brand" to={"/"}></Link>
@@ -47,9 +40,18 @@ const NavBar = () => {
               </button>
               <div className="collapse navbar-collapse text-end" id="navbarNav">
                 <ul className="navbar-nav">
-                  <li className="nav-item">
+                  <li className="nav-item ">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
+                      activeclassname="page"
+                      to={"/"}
+                    >
+                      Todos
+                    </NavLink>
+                  </li>
+                  <li className="nav-item ">
+                    <NavLink
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/corte"}
                     >
@@ -58,7 +60,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/oscilantes"}
                     >
@@ -67,7 +69,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/termofusoras"}
                     >
@@ -76,7 +78,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/perforacion"}
                     >
@@ -85,7 +87,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/soldadura"}
                     >
@@ -94,7 +96,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/fresadoras"}
                     >
@@ -103,7 +105,7 @@ const NavBar = () => {
                   </li>
                   <li className="nav-item">
                     <NavLink
-                      className="nav-link"
+                      className="nav-link text-light"
                       activeclassname="page"
                       to={"/category/otros"}
                     >
@@ -119,8 +121,6 @@ const NavBar = () => {
         <div className="col-md-4 d-flex align-items-center justify-content-end ">
           <CartWidget />
         </div>
-
-        <hr />
       </div>
     </div>
   );

@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-/* import swal from "sweetalert"; */
 import { Link } from "react-router-dom";
 
 const ItemCount = ({ stock, onAdd }) => {
@@ -27,15 +26,14 @@ const ItemCount = ({ stock, onAdd }) => {
   return (
     <div>
       <div className="row mb-3">
-        <div className="col-md-6 text-center">
-          <div
+          <div 
             className="btn-group"
             role="group"
             aria-label="Basic outlined example"
           >
             <button
               type="button"
-              className="btn btn-outline-primary"
+              className="btn btn-primary"
               onClick={decreaseStock}
             >
               {" "}
@@ -46,31 +44,33 @@ const ItemCount = ({ stock, onAdd }) => {
             </button>
             <button
               type="button"
-              className="btn btn-outline-primary"
+              className="btn btn-primary"
               onClick={increaseStock}
             >
               {" "}
               +{" "}
             </button>
           </div>
-        </div>
+        
       </div>
-      <div className="row">
-        <div className="col-md-6 text-center">
+      <div className="row" >
+        <div className="col-md text-center">
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => {
+              addToCart(counter);
+            }}
+          >
+            Agregar al Carrito
+          </button>
+
           {sold ? (
-            <Link to={"/cart"} className="btn btn-outline-primary">
+            <Link to={"/cart"} className="btn btn-outline-success">
               Terminar Mi Compra
             </Link>
           ) : (
-            <button
-              type="button"
-              className="btn btn-outline-primary"
-              onClick={() => {
-                addToCart(counter);
-              }}
-            >
-              Agregar al Carrito
-            </button>
+            ""
           )}
         </div>
       </div>

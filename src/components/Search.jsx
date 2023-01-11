@@ -1,23 +1,21 @@
+import React, { useContext } from "react";
+import { SearchContext } from "./context/SearchContext";
+import TextField from "@mui/material/TextField";
+
 const Search = () => {
+  const { search, searching } = useContext(SearchContext);
+
   return (
-    <div
-      className="input-group input-group-sm"
-      style={{
-        webkitBoxShadow: " -12px 14px 12px -10px rgba(0,0,0,0.48)",
-        mozBoxShadow: "-12px 14px 12px -10px rgba(0,0,0,0.48)",
-        boxSshadow: "-12px 14px 12px -10px rgba(0,0,0,0.48)",
-      }}
-    >
-      <span className="input-group-text" id="inputGroup-sizing-sm">
-        Buscar
-      </span>
-      <input
-        type="text"
-        className="form-control"
-        aria-label="Sizing example input"
-        aria-describedby="inputGroup-sizing-sm"
-      />
-    </div>
+    <TextField
+      id="margin-normal"
+      margin="normal"
+      value={search}
+      onChange={searching}
+      variant="outlined"
+      fullWidth
+      label="Buscar productos..."
+      style={{ backgroundColor: "white" }}
+    />
   );
 };
 

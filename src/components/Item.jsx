@@ -4,12 +4,11 @@ const Item = ({ products }) => {
   let id = products.id;
   let shortDescription = products.description.slice(0, 200);
   let name = products.name;
-  let stock = products.stock;
-
+ 
   return (
     <div
-      className="card mb-1 border-success"
-      style={{ backgroundColor: "#E6EBF3", maxWidth: "540px" }}
+      className="card mb-1"
+      style={{ maxWidth: "540px",boxShadow: "rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px" }}
     >
       <Link
         to={"/item/" + id}
@@ -21,6 +20,7 @@ const Item = ({ products }) => {
               className="img-fluid rounded-start pt-2"
               style={{ height: "85%" }}
               src={products.image1}
+              alt={products.name}
             />
           </div>
 
