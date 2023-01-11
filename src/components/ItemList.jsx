@@ -1,6 +1,6 @@
 import { SearchContext } from "./context/SearchContext";
-import Item from "./Item";
 import React, { useContext } from "react";
+import Item from "./Item";
 
 
 const ItemList = ({ listProducts }) => {
